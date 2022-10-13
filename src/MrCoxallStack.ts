@@ -27,15 +27,16 @@ class MrCoxallStack {
     }
   }
 
-  // peekItem - returns teh last item from the stack array.
+  // peekItem - returns the last item from the stack array.
   peekItem(): number | undefined | string {
     if (this.stack.length !== 0) {
       return this.stack[this.stack.length - 1]
     } else {
-      return 'No items to pop in the stack.'
+      return 'No items to peek in the stack.'
     }
   }
 
+  // clearStack - removes all of the items from the stack array.
   clearStack(): void {
     this.stack.length = 0
   }
